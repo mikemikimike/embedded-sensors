@@ -66,6 +66,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "macro-hygiene-downstream"
+version = "0.0.0"
+dependencies = [
+ "embedded-sensors-hal",
+]
+
+[[package]]
 name = "paste"
 version = "1.0.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"

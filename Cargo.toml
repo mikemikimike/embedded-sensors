@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["embedded-sensors", "embedded-sensors-async"]
+members = ["embedded-sensors", "embedded-sensors-async", "tests/downstream-macro"]
 
 [patch.crates-io]
 embedded-sensors-hal = { path = "embedded-sensors" }
