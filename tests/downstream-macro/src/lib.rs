@@ -30,3 +30,10 @@ impl AsyncSensorTrait for AsyncSensor {}
 impl<T: AsyncSensorTrait + ?Sized> AsyncSensorTrait for &mut T {}
 
 decl_threshold_traits!(async, AsyncSensor, AsyncSensorTrait, f32, "units");
+
+pub fn require_blocking_traits<T: BlockingSensorThresholdSet + BlockingSensorHysteresis>() {}
+
+pub fn require_async_traits<
+    T: AsyncSensorThresholdSet + AsyncSensorHysteresis + AsyncSensorThresholdWait,
+>() {
+}
